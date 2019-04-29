@@ -1,0 +1,73 @@
+@import '../../styles/privilegeMixin.scss';
+
+$height:3.4rem;
+
+.featured_privilege_Right_ele{
+    max-width: 6.7rem;
+    margin: auto;
+    margin-bottom:0.3rem;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 0.2rem;
+    border: 1px solid $borderColor;
+    .preview_image_choice {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 2.2rem;
+        margin-left: -1px;
+        display: block;
+    }
+    .preview_center_choice {
+        display: block;
+        height: auto;
+        line-height: 1.2rem;
+        .preview_left_container {
+            display: inline-block;
+            max-width: 4.8rem;
+            width: 100%;
+            height: 0.8rem;
+            line-height: 0.8rem;
+            padding: 0.2rem;
+            vertical-align: top;
+            text-align: left;
+            .preview_info_top{
+                display: block;
+                height: 0.3rem;
+                line-height: 0.3rem;
+                padding-bottom: 0.15rem;
+                white-space: nowrap;
+                .preview_info_name {
+                    @include preview_info_name;
+                    vertical-align: top;
+                    display: inline-block;
+                }
+                .preview_info_intro {
+                    @include preview_info_intro;
+                    vertical-align: top;
+                    display: inline-block;
+                    padding-left: 0.2rem;
+                    line-height: 0.26rem;
+                    height: 0.26rem;
+                }
+                .preview_info_price{
+                    @include preview_info_price;
+                }
+            }
+            .preview_info_useIntro {
+                @include preview_info_useIntro;
+                display: block;
+            }
+        }
+        .preview_right_container {
+            display: inline-block;
+            vertical-align: top;
+            .preview_button {
+                display: block;
+                margin-top: 0.4rem;
+            }
+        }
+    }
+}

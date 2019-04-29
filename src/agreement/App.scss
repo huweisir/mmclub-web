@@ -1,0 +1,33 @@
+$padding:0.4rem;
+.App{
+    background-color: #fff;
+    width: auto;
+    padding: $padding;
+    padding-bottom: 1rem;
+}
+li,p{
+    text-align: justify;
+    white-space: pre-wrap;
+    line-height: 1.5;
+    word-break: break-word;
+    font-size: 0.3rem!important;
+}
+
+ul{
+    margin-left:$padding!important;
+}
+
+h2{    
+    text-align: center;
+    font-size: 0.4rem!important;
+    padding-bottom: 0.3rem!important;
+}
+
+.padding-b-D1rem{
+    padding-bottom: 0.3rem;
+    height: 0rem;
+}
+
+.title{
+    font-weight: bold;
+}

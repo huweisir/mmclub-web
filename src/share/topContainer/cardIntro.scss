@@ -1,0 +1,86 @@
+$font_title:0.5rem;
+
+$btn_height:0.9rem;
+
+@mixin title_style($fontweight:normal) {
+    font-weight: $fontweight;
+    line-height: $font_title;
+    font-size:$font_title;
+    height:  $font_title;
+    text-align: justify;
+    width: 100%;
+    &:after {
+        content: " ";
+        display: inline-block;
+        width: 100%;
+    }
+}
+.top_title{
+    text-align: center;
+    color: #81858a;
+    font-size: 0.24rem;
+    margin-bottom: 0.12rem;
+}
+.card_Intro{
+    padding:0.4rem;
+    padding-bottom:0.6rem;
+    position: relative;
+    .card_image_full{
+        position: relative;
+        background-image: url(../../images/VIPcard_BG_2x.png);
+        width: 100%;
+        height: 3.45rem;
+        margin: auto;
+        line-height: 1.4rem;
+        vertical-align: top;
+        display: inline-block;
+        background-size: 107%;
+        background-position: center;
+        background-repeat: no-repeat;
+        .intro_container{
+            // display: inline;
+            .inter_title{
+                padding-top: 1.65rem;
+                text-align:center;
+                line-height: $font_title/2;
+                height:  $font_title/2;
+                font-size:  $font_title/2;
+                padding-bottom: 0.1rem;
+                color:#ffdebb;
+            }
+            .inter_btn{
+                position: relative;
+                height:$btn_height;
+                line-height: $btn_height;
+                font-size: 0.3rem;
+                font-weight: bold;
+                width: 4.7rem;
+                text-align: center;
+                display: block;
+                border-radius: $btn_height;
+                background-color:#ffcc7d;
+                margin: auto;
+                margin-top :0.1rem;
+            }
+            .inter_money{
+                position: absolute;
+                right: 0.8rem;
+                top: 0.54rem;
+                padding-left: 0.1rem;
+                font-size: 0.2rem;
+                line-height: 0.2rem;
+                color: #ffc56b;
+            }
+        }
+    }
+}
+
+.intro_tips_bottom{
+    position: absolute;
+    bottom: -0.1rem;
+    left: auto;
+    width: 6.7rem;
+    text-align: center;
+    font-size: 0.26rem;
+    color: #707070;
+}

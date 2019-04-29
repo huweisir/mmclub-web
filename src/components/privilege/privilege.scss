@@ -1,0 +1,35 @@
+
+$icon_size:1rem;
+$title_fontSize:0.24rem;
+$subtitle_fontSize:0.2rem;
+.privilege_container{
+    text-align: center;
+    padding-bottom: 0.2rem;
+    .privilege_icon{
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: $icon_size;
+        height: $icon_size;
+        display: block;
+        margin: auto;
+        border: 1px solid #eda775;
+        margin-bottom: 0.15rem;
+        border-radius: 100%;
+    }
+    .privilege_title{
+        text-align: center;
+        font-size: $title_fontSize;
+        height: $title_fontSize;
+        line-height: $title_fontSize;
+        padding-bottom: 0.1rem;
+        font-weight: bold;
+    }
+    .privilege_subtitle{
+        text-align: center;
+        font-size: $subtitle_fontSize;
+        height: $subtitle_fontSize;
+        line-height: $subtitle_fontSize;
+        color:#707070;
+    }
+}

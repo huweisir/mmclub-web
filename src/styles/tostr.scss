@@ -1,0 +1,20 @@
+@media screen and ( -webkit-min-device-pixel-ratio : 2 ), 
+( min--moz-device-pixel-ratio : 2 ),      
+( min-resolution: 2dppx ){
+    .am-toast-notice  {
+        transform: scale(2);
+    }
+}     
+@media screen and ( -webkit-min-device-pixel-ratio : 3 ), 
+( min--moz-device-pixel-ratio : 3 ),      
+( min-resolution: 3dppx ){
+    .am-toast-notice  {
+        transform: scale(3);
+    }
+}     
+.am-toast-notice-content .am-toast-text {
+    min-width: 1.2rem;
+    padding: 0.18rem 0.3rem;
+    font-size: 0.28rem;
+    border-radius: 0.1rem;
+}

@@ -1,0 +1,54 @@
+@import '../../styles/privilegeMixin.scss';
+
+$height:1.5rem;
+
+.privilege_Right_ele{
+    max-width: 6.7rem;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 0.2rem;
+    border: 1px solid $borderColor;
+    .preview_image {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: $height;
+        height: $height;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .preview_center {
+        display: inline-block;
+        width:100%;
+        padding:0.2rem;
+        max-width: 3.3rem;
+        vertical-align: top;
+        .preview_info_intro {
+            @include preview_info_intro;
+            display: block;
+            padding-bottom: 0.1rem;
+        }
+        .preview_info_name {
+            @include preview_info_name;
+            display: block;
+        }
+        .preview_info_useIntro {
+            @include preview_info_useIntro;
+            padding-bottom: 0.1rem;
+            display: block;
+        }
+        .preview_info_price{
+            @include preview_info_price;
+        }
+    }
+    .preview_right_container {
+        display: inline-block;
+        vertical-align: top;
+        .preview_button {
+            display: block;
+            margin-top: 0.5rem;
+        }
+    }
+}

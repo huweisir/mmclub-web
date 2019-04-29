@@ -1,0 +1,34 @@
+.QRcodeStyle{}
+
+.QRcodeContainer{
+    position: absolute;
+    width: 2.15rem;
+    height: 2.65rem;
+    border-radius: 0.11rem;
+    margin: auto;
+    left: 0;
+    top: 1.45rem;
+    right: 0;
+    background: #ffd292;
+}
+.QRcode{
+    width: 1.74rem;
+    height: 1.74rem;
+    display: block;
+    margin: 0.2rem auto;
+}
+.QRcodeImg{
+    width: 1.74rem;
+    height: 1.74rem;
+    display: inline-block;
+    background-image: url(../../images/QRcode.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.dowmloadText{
+    font-size: 0.28rem;
+    line-height: 0.28rem;
+    font-weight: bold;
+    text-align: center;
+}

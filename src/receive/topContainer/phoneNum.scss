@@ -1,0 +1,55 @@
+
+$input_fontSize:0.33rem;
+$btn_height:0.9rem;
+
+.phone_number{
+    padding:0 0.4rem;
+    .phone_number_top{
+        width: 100%;
+        height: $btn_height;
+        padding-bottom: 0.2rem;
+        .input{
+            display: block;
+            height: $btn_height;
+            line-height:$input_fontSize;
+            font-size: $input_fontSize;
+            padding-left:0.3rem;
+            border:solid 1px #ccc;
+            background-color:#f8f8f8;
+            border-radius: 0.1rem;
+            width: 100%;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            &::-webkit-input-placeholder{
+                color:#ccc;
+            }
+        }
+        input[type='number'] {
+            -moz-appearance:textfield;
+        }
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    }
+    .phone_number_bottom{
+        height: $btn_height;
+        line-height: $btn_height;
+        .phone_number_btn{
+            height:$btn_height;
+            line-height: $btn_height;
+            font-size: 0.3rem;
+            font-weight: bold;
+            width: 4.7rem;
+            text-align: center;
+            display: block;
+            border-radius: $btn_height;
+            background-color:#ffcc7d;
+            margin: auto;
+           
+        }
+    }
+    
+}

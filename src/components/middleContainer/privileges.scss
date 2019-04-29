@@ -1,0 +1,34 @@
+.privilege_lists{
+    padding:0.4rem ;
+    padding-bottom: 0.35rem;
+    text-align: justify;
+    display: flex;
+    // justify-content: space-between;
+    flex-wrap: wrap;
+    &:after {
+        display: table;
+        content: "";
+        clear: both;
+    }
+    .privilege_list_item{
+        display:inline-block;
+        width: 25%;
+    }
+    .margin_right{
+        margin-right:0.8rem;
+    }
+    .justify_fix{
+        display: inline-block;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+}
+
+.after{
+    &:after {
+        display: table;
+        content: "";
+        clear: both;
+    }
+}

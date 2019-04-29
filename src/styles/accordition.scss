@@ -1,0 +1,24 @@
+$accordion_height:0.2rem;
+$colorGray1: #949494;
+
+.accordion_header_icon{
+    width: $accordion_height;
+    height: $accordion_height;
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url(../../images/array.svg);
+    background-position: center;
+    background-size: cover;
+    transition: all 0.3s ease-out;
+}
+.accordion_header_icon_up{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+.accordion_header_title{
+    display: inline-block;
+    vertical-align: middle;
+    font-size:$accordion_height;
+    line-height: $accordion_height;
+}

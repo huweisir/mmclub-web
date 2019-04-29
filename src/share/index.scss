@@ -1,0 +1,32 @@
+@import "../styles/common.scss";
+@import "../styles/comfirm.scss";
+
+// @import '~antd/dist/antd.css';
+
+
+html {
+  background: transparentify;
+}
+
+body {
+  font-family:  PingFang SC Regular,Helvetica Neue, Helvetica, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #fff;
+  color:#222;
+  /* font-size: .24rem; */
+  -webkit-overflow-scrolling: touch;
+  overflow: auto;
+  border: 0;
+}
+
+p {
+  text-indent: 0cm;
+}
+
+a, b, blockquote, body, caption, code, div, em, h1, h2, h3, h4, h5, h6, html, i, iframe, img, label, li, p, span, strong, ul {
+  border: 0 none;
+  font-size: inherit;
+  margin: 0;
+  padding: 0;
+  max-height: 1000rem;
+}

@@ -1,0 +1,46 @@
+
+// @media screen and ( -webkit-min-device-pixel-ratio : 2 ) and
+// ( min--moz-device-pixel-ratio : 2 ) and    
+// ( min-resolution: 2dppx ){
+//     .am-modal-content {
+//         transform: scale(2);
+//     }
+// }     
+// @media screen and ( -webkit-min-device-pixel-ratio : 3 ), 
+// ( min--moz-device-pixel-ratio : 3 ),      
+// ( min-resolution: 3dppx ){
+//     .am-modal-content {
+//         transform: scale(3);
+//     }
+// }     
+
+.am-modal-button-group-v .am-modal-button{
+    font-size:14px;
+}
+.am-modal-alert-content, .am-modal-propmt-content{
+    white-space: pre-line;
+}
+
+
+.am-modal-button-group-v .am-modal-button {
+    font-size: 0.3rem!important;
+    height: 1rem!important;
+    line-height: 1rem!important;
+}
+
+.am-modal-transparent 
+.am-modal-body {
+    font-size: 0.3rem!important;
+    padding: 0 0.3rem 0.3rem!important;
+}
+.am-modal-transparent {
+    width: 5.4rem!important;
+    .am-modal-content {
+        border-radius: 0.14rem!important;
+        padding-top: 0.3rem!important;
+    }
+}
+
+.am-modal-title {
+    font-size: 0.36rem!important;
+}

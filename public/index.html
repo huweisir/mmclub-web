@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+  <script>var isAndroid = window.navigator.appVersion.match(/android/gi);
+    var isIPhone = window.navigator.appVersion.match(/iphone/gi);
+    var dpr = isIPhone ? window.devicePixelRatio || 1 : 1;
+    //为了兼容antd,这边scale统一采用1（原来1/dpr）
+    // var scale = 1;
+    var scale = 1 / dpr;
+    window.metaScale = scale || 1;
+    var docEl = document.documentElement;
+    var metaEl = document.querySelector('meta[name="viewport"]');
+    var clientWidth = docEl.clientWidth;
+    var fontSize = clientWidth * dpr / (7.5) + 'px';
+    if (isIPhone) {
+      //防止dpr415的字体过大，最大字体100px
+      if (clientWidth * dpr <= 750) {
+        fontSize = clientWidth ? clientWidth * dpr / (7.5) + "px" : "100px";
+      }
+      metaEl.setAttribute('content', 'width=' + fontSize + ',initial-scale=' + scale + ',maximum-scale=' + scale + ', minimum-scale=' + scale + ',user-scalable=no');
+    } else {
+      fontSize = clientWidth ? clientWidth / (7.5) + "px" : "100px";
+      //防止Android在这段js执行的时候没有拿到clientWidth
+      window.onload = function () {
+        var docEl = document.documentElement;
+        var clientWidth = docEl.clientWidth;
+        fontSize = clientWidth ? clientWidth / (7.5) + "px" : "100px";
+        docEl.style.fontSize = fontSize;
+      }
+    }
+    docEl.style.fontSize = fontSize;
+    if ('addEventListener' in document) {
+      document.addEventListener('DOMContentLoaded', function () {
+      }, false);
+    }
+    if (!window.Promise) {
+      document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"' + '>' + '<' + '/' + 'script>');
+    }
+  </script>
+</head>
+
+<body>
+  <noscript>
+    欢迎使用大师
+  </noscript>
+  <div id="root"></div>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+</body>
+
+</html>

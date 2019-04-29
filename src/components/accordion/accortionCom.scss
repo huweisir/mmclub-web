@@ -1,0 +1,16 @@
+@import '../../styles/privilegeMixin.scss';
+
+.accordion_header{
+    width: 100%;
+    @include preview_info_useIntro;
+}
+.accordion_body{
+    display: block;
+    color: #949494;
+    padding: 0.3rem 0.3rem 0.25rem 0.3rem;
+    font-size: $accordion_height;
+    line-height: 0.3rem;
+    top: 0.3rem;
+    left: 0;
+    white-space: pre-wrap;
+}
